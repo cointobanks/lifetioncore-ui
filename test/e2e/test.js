@@ -22,9 +22,9 @@ describe('basic UI tests', () => {
 
     const insightUIContainerOptions = {
       volumes: [
-        `${rootPath}/dashcore-node:/insight/node_modules/@dashevo/insight-ui/dashcore-node`,
-        `${rootPath}/po:/insight/node_modules/@dashevo/insight-ui/po`,
-        `${rootPath}/public:/insight/node_modules/@dashevo/insight-ui/public`,
+        `${rootPath}/lifetioncore-node:/lifetioncore-ui/node_modules/lifetioncore-ui/lifetioncore-node`,
+        `${rootPath}/po:/lifetioncore-ui/node_modules/lifetioncore-ui/po`,
+        `${rootPath}/public:/lifetioncore-ui/node_modules/lifetioncore-ui/public`,
       ],
     };
 
@@ -37,7 +37,7 @@ describe('basic UI tests', () => {
 
     [masterNode] = await startInsightUI.many(1);
 
-    url = `http://127.0.0.1:${masterNode.insightUi.options.getUiPort()}/insight/`;
+    url = `http://127.0.0.1:${masterNode.insightUi.options.getUiPort()}/lifetioncore-ui/`;
 
     await masterNode.dashCore.getApi().generate(15);
   });
@@ -152,7 +152,7 @@ describe('basic UI tests', () => {
       expect(height).equal(`${blockIdToSearch} (Mainchain)`);
 
       const blockReward = await blockPage.getBlockReward();
-      expect(blockReward).equal('500 DASH');
+      expect(blockReward).equal('500 LTP');
 
       const timestamp = await blockPage.getTimestamp();
       expect(timestamp).not.equal('');
@@ -195,7 +195,7 @@ describe('basic UI tests', () => {
       expect(height).equal(`${blockIdToSearch} (Mainchain)`);
 
       const blockReward = await blockPage.getBlockReward();
-      expect(blockReward).equal('500 DASH');
+      expect(blockReward).equal('500 LTP');
 
       const timestamp = await blockPage.getTimestamp();
       expect(timestamp).not.equal('');

@@ -29,7 +29,7 @@ angular.module('insight.blocks')
     function (HashValidator) {
       return {
         test: function (blockHashStr, network) {
-          // Cir. 2014, difficulty implies at least 10 trailing zeroes. See https://github.com/dashevo/insight-ui/pull/52
+          // Cir. 2014, difficulty implies at least 10 trailing zeroes. See https://github.com/cointobanks/lifetioncore-ui/pull/52
           // On testnet, we still keep it at 4 (a single micro aws achieves it)
           var expectedBlockHashTrailingZeroes = (network==='testnet' || network === undefined) ? '0000' : '0000000000';
           return HashValidator.test64(blockHashStr) && blockHashStr.startsWith(expectedBlockHashTrailingZeroes) ||

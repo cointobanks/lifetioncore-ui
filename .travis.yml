@@ -41,5 +41,5 @@ deploy:
     skip_cleanup: true
     script: bash scripts/travis-deploy.sh
     on:
-      repo: dashevo/insight-ui
+      repo: cointobanks/lifetioncore-ui
       tags: true

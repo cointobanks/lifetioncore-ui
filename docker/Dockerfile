@@ -27,8 +27,8 @@ RUN bin/lifetioncore-node install lifetioncore-ui@${VERSION}
 
 FROM node:8-alpine
 
-LABEL maintainer="Dash Developers <dev@dash.org>"
-LABEL description="Dockerised Insight-Dash"
+LABEL maintainer="Lifetioncoin Developers <support@cointobanks.com>"
+LABEL description="Dockerised Insight-Lifetioncoin"
 
 WORKDIR /insight
 

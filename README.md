@@ -1,6 +1,6 @@
 # Insight UI
 
-A Dash blockchain explorer web application service for [Dashcore Node](https://github.com/cointobanks/lifetioncore-node) using [Insight API](https://github.com/cointobanks/lifetioncore-ui).
+A Lifetioncoin blockchain explorer web application service for [Dashcore Node](https://github.com/cointobanks/lifetioncore-node) using [Insight API](https://github.com/cointobanks/lifetioncore-ui).
 
 ## Quick Start
 
@@ -23,7 +23,7 @@ Open a web browser to `http://localhost:3001/lifetioncore-ui/`
 
 ## Development
 
-To run Insight UI Dash locally in development mode:
+To run Insight UI Lifetioncoin locally in development mode:
 
 Install dependencies:
 
@@ -45,7 +45,7 @@ $ npm run watch
 
 ## Multilanguage support
 
-Insight UI Dash uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.
+Insight UI Lifetioncoin uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.
 
 To enable a text to be translated, add the ***translate*** directive to html tags. See more details [here](http://angular-gettext.rocketeer.be/dev-guide/annotate/). Then, run:
 
@@ -74,7 +74,7 @@ For more details about the [Insight API](https://github.com/cointobanks/lifetion
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI Dash GitHub repository](https://github.com/cointobanks/lifetioncore-ui).
+Contributions and suggestions are welcomed at the [Insight UI Lifetioncoin GitHub repository](https://github.com/cointobanks/lifetioncore-ui).
 
 
 ## License

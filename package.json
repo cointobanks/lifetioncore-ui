@@ -1,7 +1,7 @@
 {
   "name": "lifetioncore-ui",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Lifetioncoin network and build your own services with it.",
-  "version": "2.0.5",
+  "version": "2.0.9",
   "repository": "git://github.com/cointobanks/lifetioncore-ui.git",
   "contributors": [
     {
